@@ -1,6 +1,6 @@
 # Projeto Mosaico App (Protótipo Funcional)
 
-![Capa do App Mosaico](https://imgur.com/a/Dy4BIIP) 
+![Capa do App Mosaico](https://github.com/Aloana/mosaico-app/blob/main/capa-mosaico.png) 
 
 ## 🧩 Sobre o Projeto
 
@@ -69,5 +69,5 @@ O servidor Metro Bundler será iniciado e o aplicativo será instalado e aberto 
 
 **[Aloana Neto Silva]**
 
-- Github: [@seu-usuario](https://github.com/seu-usuario)
-- LinkedIn: [seu-linkedin](https://linkedin.com/in/seu-linkedin/)
+- Github: [@seu-usuario](https://github.com/Aloana)
+- LinkedIn: [seu-linkedin](https://www.linkedin.com/in/aloana-neto)
