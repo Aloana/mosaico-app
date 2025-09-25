@@ -1,4 +1,3 @@
-// Exemplo de como centralizar cores
 export const COLORS = {
   primary: '#005A8D',
   background: '#f1f5f9',

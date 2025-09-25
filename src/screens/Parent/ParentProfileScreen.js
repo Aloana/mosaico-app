@@ -4,7 +4,6 @@ import ScreenWrapper from '../../components/common/ScreenWrapper';
 import Header from '../../components/common/Header';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 
-// Componente para cada linha de opção
 const ProfileOption = ({ icon, label, hasSwitch, onValueChange, switchValue }) => (
     <View style={styles.optionRow}>
         <View style={styles.optionLeft}>
@@ -26,7 +25,6 @@ const ProfileOption = ({ icon, label, hasSwitch, onValueChange, switchValue }) =
 
 // --- TELA PRINCIPAL ---
 const ParentProfileScreen = ({ navigation }) => {
-    // Estado para controlar os switches de notificação
     const [notifications, setNotifications] = useState(true);
     const [emailAlerts, setEmailAlerts] = useState(false);
 
@@ -135,7 +133,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     optionIcon: {
-        width: 25, // Para alinhar os textos verticalmente
+        width: 25,
     },
     optionLabel: {
         fontSize: 16,

@@ -4,27 +4,22 @@ import ScreenWrapper from '../../components/common/ScreenWrapper';
 import Header from '../../components/common/Header';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 
-// 1. IMPORTE O TOAST
 import Toast from 'react-native-toast-message';
 
 const AddObservationScreen = ({ navigation }) => {
 
-    // 2. CRIE UMA FUNÇÃO PARA SALVAR E MOSTRAR O TOAST
     const handleSave = () => {
-        // --- Em um app real, aqui você enviaria os dados para a API ---
         console.log("Observação salva com sucesso!");
 
-        // Mostra a notificação de sucesso
         Toast.show({
-            type: 'mosaicoSuccess', // <-- ALTERADO de 'success' para 'mosaicoSuccess'
+            type: 'mosaicoSuccess',
             text1: 'Sucesso!',
             text2: 'Sua observação foi salva.',
         });
 
-        // Navega de volta para a tela anterior após um pequeno atraso
         setTimeout(() => {
             navigation.goBack();
-        }, 1000); // 1 segundo
+        }, 1000);
     };
 
     return (
@@ -58,7 +53,6 @@ const AddObservationScreen = ({ navigation }) => {
     );
 };
 
-// Estilos (sem alterações)
 const styles = StyleSheet.create({
     mainContent: { flexGrow: 1, paddingHorizontal: 20, backgroundColor: '#fff' },
     inputGroup: { marginBottom: 18 },

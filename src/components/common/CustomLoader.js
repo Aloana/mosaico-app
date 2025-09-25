@@ -26,8 +26,6 @@ const AnimatedShape = ({ delay, style }) => {
     return <Animated.View style={[style, { opacity }]} />;
 };
 
-
-// --- Componente Principal do Loader ---
 const CustomLoader = () => {
     const logoPieces = [
         // Linha 1

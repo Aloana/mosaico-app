@@ -4,7 +4,6 @@ import ScreenWrapper from '../../components/common/ScreenWrapper';
 import Header from '../../components/common/Header';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 
-// 1. IMPORTE O TOAST
 import Toast from 'react-native-toast-message';
 
 // --- Componentes Internos ---
@@ -32,18 +31,15 @@ const StatusButton = ({ label, active, onPress }) => (
 const AddActivityScreen = ({ navigation }) => {
     const [status, setStatus] = useState('success'); 
 
-    // 2. CRIE UMA FUNÇÃO PARA SALVAR E MOSTRAR O TOAST
     const handleSave = () => {
         console.log("Registro de atividade salvo!");
 
-        // Mostra a notificação de sucesso com nosso estilo customizado
         Toast.show({
             type: 'mosaicoSuccess',
             text1: 'Registro Salvo!',
             text2: 'O progresso do aluno foi salvo com sucesso.',
         });
 
-        // Navega de volta para a tela anterior
         setTimeout(() => {
             navigation.goBack();
         }, 1000);

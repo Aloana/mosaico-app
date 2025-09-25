@@ -7,7 +7,6 @@ import Icon from 'react-native-vector-icons/FontAwesome5';
 import { TEACHER_FILTERS, CLASS_FILTERS } from '../../constants/filterOptions';
 import CustomLoader from '../../components/common/CustomLoader';
 
-// Dados de exemplo
 const mockStudents = [
     { id: '1', name: 'Lucas Souza', lastUpdate: 'Último registro: Ontem', color: '#E1F5FE', initial: 'L' },
     { id: '2', name: 'Sofia Pereira', lastUpdate: 'Último registro: 02/09', color: '#FFF3E0', initial: 'S' },

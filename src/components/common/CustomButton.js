@@ -1,14 +1,12 @@
 import React from 'react';
 
-// Um botão mais flexível que aceita diferentes estilos e um ícone opcional
 const CustomButton = ({ children, onClick, style, type = 'primary' }) => {
   const baseStyle = {
     marginTop: 'auto',
   };
 
-  // Define estilos com base no tipo
   const typeStyles = {
-    primary: {}, // Estilo padrão já definido no CSS
+    primary: {},
     secondary: { 
       backgroundColor: '#f1f5f9', 
       color: '#475569', 

@@ -18,7 +18,7 @@ const Fab = ({ onPress }) => {
 const styles = StyleSheet.create({
     fab: {
         position: 'absolute',
-        bottom: 25, // Posição padronizada que ajustamos anteriormente
+        bottom: 25,
         right: 20,
         width: 56,
         height: 56,
@@ -26,12 +26,12 @@ const styles = StyleSheet.create({
         backgroundColor: '#005A8D',
         justifyContent: 'center',
         alignItems: 'center',
-        elevation: 8, // Sombra para Android
-        shadowColor: '#000', // Sombra para iOS
+        elevation: 8,
+        shadowColor: '#000',
         shadowOffset: { width: 0, height: 4 },
         shadowOpacity: 0.3,
         shadowRadius: 4,
-        zIndex: 10, // Garante que o botão fique sobre outros elementos
+        zIndex: 10,
     },
 });
 

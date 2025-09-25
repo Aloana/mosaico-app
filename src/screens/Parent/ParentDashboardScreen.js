@@ -33,12 +33,11 @@ const ProgressBar = ({ progress }) => (
     <View style={styles.progressBarBg}><View style={[styles.progressBarFill, { width: `${progress}%` }]} /></View>
 );
 
-// CORREÇÃO: A função "goToProfile" agora usa navigation.navigate para mudar de aba
 const ProfileMenuModal = ({ visible, onClose, navigation }) => {
     const { logout } = useAuth();
     const goToProfile = () => {
-        onClose(); // Fecha o modal
-        navigation.navigate('Perfil'); // Navega para a ABA "Perfil"
+        onClose();
+        navigation.navigate('Perfil');
     };
     return (
         <Modal visible={visible} transparent={true} animationType="fade" onRequestClose={onClose}>

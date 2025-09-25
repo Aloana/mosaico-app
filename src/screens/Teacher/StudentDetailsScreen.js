@@ -4,7 +4,6 @@ import ScreenWrapper from '../../components/common/ScreenWrapper';
 import Header from '../../components/common/Header';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 
-// Reutilizando os componentes do ParentDashboard
 const Card = ({ icon, iconColor, title, children }) => (
     <View style={styles.card}>
         <Text style={styles.cardTitle}>

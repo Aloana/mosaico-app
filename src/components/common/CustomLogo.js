@@ -1,7 +1,6 @@
 import React from 'react';
 import { SvgXml } from 'react-native-svg';
 
-// O código SVG da sua logo
 const logoSvgXml = `
 <svg width="80" height="80" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="20" height="20" rx="4" fill="#F44336"/>

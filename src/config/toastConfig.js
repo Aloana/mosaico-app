@@ -8,7 +8,6 @@ import Icon from 'react-native-vector-icons/FontAwesome5';
   e o valor é um componente React que renderiza a aparência dele.
 */
 export const toastConfig = {
-  // Toast de Sucesso customizado
   mosaicoSuccess: ({ text1, text2 }) => (
     <View style={[styles.base, styles.success]}>
       <Icon name="check-circle" size={20} color="#fff" solid style={styles.icon} />
@@ -19,7 +18,6 @@ export const toastConfig = {
     </View>
   ),
 
-  // Toast de Erro customizado
   mosaicoError: ({ text1, text2 }) => (
     <View style={[styles.base, styles.error]}>
       <Icon name="times-circle" size={20} color="#fff" solid style={styles.icon} />
@@ -45,10 +43,10 @@ const styles = StyleSheet.create({
     shadowRadius: 4,
   },
   success: {
-    backgroundColor: '#4CAF50', // Verde
+    backgroundColor: '#4CAF50',
   },
   error: {
-    backgroundColor: '#F44336', // Vermelho
+    backgroundColor: '#F44336',
   },
   icon: {
     marginRight: 15,

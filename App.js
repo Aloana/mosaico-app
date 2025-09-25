@@ -8,7 +8,6 @@ import { AuthProvider, useAuth } from './src/context/AuthContext';
 import Toast from 'react-native-toast-message';
 import { toastConfig } from './src/config/toastConfig';
 
-// Importe TODAS as suas telas
 import LoginScreen from './src/screens/Auth/LoginScreen';
 import UserProfileScreen from './src/screens/Shared/UserProfileScreen';
 // Telas dos Pais
@@ -120,14 +119,14 @@ const tabScreenOptions = {
         backgroundColor: '#fff',
         borderTopWidth: 1,
         borderTopColor: '#e2e8f0',
-        height: 90, // Aumentamos a altura
-        paddingTop: 5, // Adicionamos um espaçamento no topo
-        paddingBottom: 8, // Aumentamos o espaçamento inferior
+        height: 90,
+        paddingTop: 5,
+        paddingBottom: 8,
     },
     tabBarLabelStyle: {
         fontSize: 12,
         fontWeight: '600',
-        marginTop: -5, // Move o texto um pouco para cima
+        marginTop: -5,
     }
 };
 

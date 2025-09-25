@@ -7,7 +7,6 @@ import Icon from 'react-native-vector-icons/FontAwesome5';
 import { useAuth } from '../../context/AuthContext';
 import { MOCK_USERS } from '../../constants/userData';
 
-// Componente para cada linha de opção
 const ProfileOption = ({ icon, label, hasSwitch, onValueChange, switchValue }) => (
     <View style={styles.optionRow}>
         <View style={styles.optionLeft}>
@@ -32,8 +31,8 @@ const UserProfileScreen = ({ navigation }) => {
     const [notifications, setNotifications] = useState(true);
     const [emailAlerts, setEmailAlerts] = useState(false);
 
-    const { userRole } = useAuth(); // Pega o perfil do usuário logado
-    const userData = MOCK_USERS[userRole] || {}; // Pega os dados do usuário com base no perfil
+    const { userRole } = useAuth();
+    const userData = MOCK_USERS[userRole] || {};
 
     return (
         <ScreenWrapper barBackgroundColor="#f1f5f9">
@@ -76,7 +75,6 @@ const UserProfileScreen = ({ navigation }) => {
     );
 };
 
-// Cole os estilos do ParentProfileScreen.js aqui, eles são idênticos
 const styles = StyleSheet.create({
     content: { padding: 20 },
     profileInfoContainer: { alignItems: 'center', marginBottom: 30 },
